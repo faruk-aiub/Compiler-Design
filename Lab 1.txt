@@ -1,0 +1,58 @@
+Task 1:
+#include <iostream>
+
+using namespace std;
+
+void isNumeric(char ch)
+{
+    if(ch >= '0' && ch <= '9')
+    {
+        cout<< ch << " "<< "is numeric number";
+    }
+    else
+    {
+
+        cout<< ch <<" " << "is not a numeric number";
+    }
+}
+int main()
+{
+    char ch;
+    cout << "Enter the Number: ";
+    cin >> ch;
+
+    isNumeric(ch);
+    return 0;
+}
+
+Task 2:
+#include <iostream>
+using namespace std;
+
+void checkOperators(const string& input) {
+
+    cout << "Operators in the input: ";
+    bool foundOperator = false;
+    for (char ch : input) {
+        if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '=') {
+            cout << ch << " ";
+            foundOperator = true;
+        }
+    }
+
+    if (!foundOperator) {
+        cout << "No operators found";
+    }
+    cout << endl;
+}
+
+int main() {
+    string input;
+
+    cout << "Enter an expression: ";
+    cin >> input;
+
+    checkOperators(input);
+
+    return 0;
+}
