@@ -1,0 +1,136 @@
+Next Task:
+
+Task 4:
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+/*void identifier(const string& str)
+{
+
+    if ((str[0] >= 'A' && str[0] <= 'Z') || (str[0] >= 'a' && str[0] <= 'z') || (str[0] == '_'))
+        {
+        cout << str << "" << " is a valid identifier." << endl;
+        }
+    else
+        {
+        cout << str << "" << " is not a valid identifier." << endl;
+        }
+}
+
+int main() {
+    string a;
+    cout << "Enter a string: ";
+    cin >> a;
+    identifier(a);
+
+    return 0;
+} */
+
+
+Task 05:
+/*int calculateAverage(int arr[], int n)
+{
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+
+
+    return sum / n;
+}
+
+int main()
+{
+    int n;
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    int avg = calculateAverage(arr, n);
+
+    cout << "The average value of the elements is: " << avg << endl;
+
+    return 0;
+} */
+
+
+Task 06:
+/*void findMinMax(int arr[], int n, int &minVal, int &maxVal) {
+
+    minVal = arr[0];
+    maxVal = arr[0];
+
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < minVal) {
+            minVal = arr[i];
+        }
+        if (arr[i] > maxVal) {
+            maxVal = arr[i];
+        }
+    }
+}
+
+int main()
+{
+    int n;
+
+    int minVal, maxVal;
+
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+
+
+    findMinMax(arr, n, minVal, maxVal);
+
+
+    cout << "The minimum value is: " << minVal << endl;
+    cout << "The maximum value is: " << maxVal << endl;
+
+    return 0;
+}*/
+
+Task 07:
+string fullName (string firstname, string lastname)
+{
+
+    return firstname + " " + lastname;
+}
+
+int main()
+{
+    string firstname, lastname, Fullname;
+
+    cout<< "Enter your First name:";
+    cin >> firstname;
+
+       cout<< "Enter your Last name:";
+    cin >> lastname;
+
+      Fullname=fullName(firstname, lastname);
+
+      cout<< "Your Full Name is: " << Fullname<< endl;
+
+      return 0;
+
+}
+
+
+
